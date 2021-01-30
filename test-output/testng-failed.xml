@@ -5,9 +5,12 @@
     <classes>
       <class name="com.hrms.tests.OrangeHRM_LoginTests">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="validLogin"/>
+          <include name="invalidUservalidPass"/>
           <include name="validUserinvalidPass"/>
+          <include name="blankUserValidPass"/>
+          <include name="beforeMyMethod"/>
+          <include name="invalidUserInvalidPass"/>
+          <include name="closeMethod"/>
         </methods>
       </class> <!-- com.hrms.tests.OrangeHRM_LoginTests -->
     </classes>
