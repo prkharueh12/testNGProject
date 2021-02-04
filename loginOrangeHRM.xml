@@ -7,7 +7,9 @@
    			<run>		
     			<include name="loginTest" />
    			</run>		
-  		</groups>	
+  		</groups>
+  		
+  			
   
     <classes>
        <class name="com.hrms.tests.OrangeHRM_LoginTests"/>

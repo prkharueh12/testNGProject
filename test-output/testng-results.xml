@@ -1,44 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23975" started-at="2021-01-29T22:43:56Z" finished-at="2021-01-29T22:44:20Z">
+  <suite name="Default suite" duration-ms="28404" started-at="2021-02-04T00:09:05Z" finished-at="2021-02-04T00:09:34Z">
     <groups>
-      <group name="loginTest">
-        <method signature="OrangeHRM_LoginTests.blankUserValidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="blankUserValidPass" class="com.hrms.tests.OrangeHRM_LoginTests"/>
-        <method signature="OrangeHRM_LoginTests.invalidUserInvalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="invalidUserInvalidPass" class="com.hrms.tests.OrangeHRM_LoginTests"/>
-        <method signature="OrangeHRM_LoginTests.invalidUservalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="invalidUservalidPass" class="com.hrms.tests.OrangeHRM_LoginTests"/>
-        <method signature="OrangeHRM_LoginTests.validUserBlankPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="validUserBlankPass" class="com.hrms.tests.OrangeHRM_LoginTests"/>
-        <method signature="OrangeHRM_LoginTests.validUserinvalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="validUserinvalidPass" class="com.hrms.tests.OrangeHRM_LoginTests"/>
-      </group> <!-- loginTest -->
     </groups>
-    <test name="Default test" duration-ms="23975" started-at="2021-01-29T22:43:56Z" finished-at="2021-01-29T22:44:20Z">
-      <class name="com.hrms.tests.OrangeHRM_LoginTests">
-        <test-method status="PASS" signature="beforeMyMethod()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="beforeMyMethod" is-config="true" duration-ms="6371" started-at="2021-01-29T17:43:56Z" finished-at="2021-01-29T17:44:03Z">
+    <test name="Default test" duration-ms="28404" started-at="2021-02-04T00:09:05Z" finished-at="2021-02-04T00:09:34Z">
+      <class name="com.hrms.hwtasks.RegisterEmailEtsy">
+        <test-method status="PASS" signature="beforeMyMethod()[pri:0, instance:com.hrms.hwtasks.RegisterEmailEtsy@14dda234]" name="beforeMyMethod" is-config="true" duration-ms="5704" started-at="2021-02-03T19:09:05Z" finished-at="2021-02-03T19:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMyMethod -->
-        <test-method status="PASS" signature="validUserBlankPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="validUserBlankPass" duration-ms="3445" started-at="2021-01-29T17:44:03Z" description="#7 Log in with a valid username, but blank password" finished-at="2021-01-29T17:44:06Z">
+        <test-method status="PASS" signature="verifyEmail()[pri:0, instance:com.hrms.hwtasks.RegisterEmailEtsy@14dda234]" name="verifyEmail" duration-ms="22671" started-at="2021-02-03T19:09:11Z" description="Login Email" finished-at="2021-02-03T19:09:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validUserBlankPass -->
-        <test-method status="PASS" signature="validUserinvalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="validUserinvalidPass" duration-ms="3594" started-at="2021-01-29T17:44:06Z" description="#3 Log in with a valid username, but invalid password" finished-at="2021-01-29T17:44:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validUserinvalidPass -->
-        <test-method status="PASS" signature="invalidUservalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="invalidUservalidPass" duration-ms="3623" started-at="2021-01-29T17:44:10Z" description="#4 Log in with an invalid username, but valid password" finished-at="2021-01-29T17:44:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidUservalidPass -->
-        <test-method status="PASS" signature="invalidUserInvalidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="invalidUserInvalidPass" duration-ms="3619" started-at="2021-01-29T17:44:13Z" description="#5 Log in with both invalid username/password" finished-at="2021-01-29T17:44:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidUserInvalidPass -->
-        <test-method status="PASS" signature="blankUserValidPass()[pri:0, instance:com.hrms.tests.OrangeHRM_LoginTests@14d3bc22]" name="blankUserValidPass" duration-ms="3300" started-at="2021-01-29T17:44:17Z" description="#6 Log in with a blank  username but valid password" finished-at="2021-01-29T17:44:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blankUserValidPass -->
-      </class> <!-- com.hrms.tests.OrangeHRM_LoginTests -->
+        </test-method> <!-- verifyEmail -->
+      </class> <!-- com.hrms.hwtasks.RegisterEmailEtsy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
