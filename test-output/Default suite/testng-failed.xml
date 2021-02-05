@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.hrms.tests.AddedNationality$LoginTest">
+      <class name="com.hrms.tests.OrangeHRMExcel">
         <methods>
           <include name="beforeMyMethod"/>
-          <include name="addCountry"/>
+          <include name="getNameExcel"/>
         </methods>
-      </class> <!-- com.hrms.tests.AddedNationality$LoginTest -->
+      </class> <!-- com.hrms.tests.OrangeHRMExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

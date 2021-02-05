@@ -42,7 +42,10 @@ public class RegisterEmailEtsy {
 		
 		Thread.sleep(9000);
 		Driver.getDriver().switchTo().window(parentWin);
-		String myMail = etsyInfo.randomMailBox.getAttribute("data-value");
+		//myEle=(WebDriverWait(Driver.getDriver(), 20).until(EC.visibility_of_element_located((By.XPATH, "//input[@id='active-mail']"))).get_attribute("data-clipboard-text"));
+		
+		String myMail = etsyInfo.randomMailBox.getText();
+				//getAttribute("readonly aria-describedby");
 		System.out.println(myMail);
 		
 //		etsyInfo.signInButt.click();
