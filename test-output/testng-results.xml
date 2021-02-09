@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12417" started-at="2021-02-05T02:42:33Z" finished-at="2021-02-05T02:42:46Z">
+  <suite name="Default suite" duration-ms="37753" started-at="2021-02-05T21:25:25Z" finished-at="2021-02-05T21:26:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12417" started-at="2021-02-05T02:42:33Z" finished-at="2021-02-05T02:42:46Z">
-      <class name="com.hrms.tests.OrangeHRMExcel">
-        <test-method status="PASS" signature="beforeMyMethod()[pri:0, instance:com.hrms.tests.OrangeHRMExcel@c5ee75e]" name="beforeMyMethod" is-config="true" duration-ms="3683" started-at="2021-02-04T21:42:33Z" finished-at="2021-02-04T21:42:37Z">
+    <test name="Default test" duration-ms="37753" started-at="2021-02-05T21:25:25Z" finished-at="2021-02-05T21:26:03Z">
+      <class name="com.hrms.hwtasks.RegisterEmailEtsy">
+        <test-method status="PASS" signature="beforeMyMethod()[pri:0, instance:com.hrms.hwtasks.RegisterEmailEtsy@c5ee75e]" name="beforeMyMethod" is-config="true" duration-ms="5822" started-at="2021-02-05T16:25:25Z" finished-at="2021-02-05T16:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMyMethod -->
-        <test-method status="PASS" signature="getNameExcel()[pri:0, instance:com.hrms.tests.OrangeHRMExcel@c5ee75e]" name="getNameExcel" duration-ms="8708" started-at="2021-02-04T21:42:37Z" description="Import for excel" finished-at="2021-02-04T21:42:46Z">
+        <test-method status="PASS" signature="verifyEmail()[pri:0, instance:com.hrms.hwtasks.RegisterEmailEtsy@c5ee75e]" name="verifyEmail" duration-ms="31911" started-at="2021-02-05T16:25:31Z" description="Login Email" finished-at="2021-02-05T16:26:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getNameExcel -->
-      </class> <!-- com.hrms.tests.OrangeHRMExcel -->
+        </test-method> <!-- verifyEmail -->
+      </class> <!-- com.hrms.hwtasks.RegisterEmailEtsy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

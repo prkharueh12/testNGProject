@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.hrms.tests.OrangeHRMExcel">
+      <class name="com.hrms.hwtasks.RegisterEmailEtsy">
         <methods>
+          <include name="verifyEmail"/>
           <include name="beforeMyMethod"/>
-          <include name="getNameExcel"/>
         </methods>
-      </class> <!-- com.hrms.tests.OrangeHRMExcel -->
+      </class> <!-- com.hrms.hwtasks.RegisterEmailEtsy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

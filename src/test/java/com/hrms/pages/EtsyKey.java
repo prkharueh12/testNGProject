@@ -21,8 +21,8 @@ public class EtsyKey {
 	
 	@FindBy (xpath = "//*[@id=\"join-neu-form\"]/div[1]/div/div[6]/div/button")
 	public WebElement submitButt;
-	
-	@FindBy (id = "mail")
+	  
+	@FindBy (xpath = "//*[@id=\"tm-body\"]/div[1]/div/div/div[2]/div[1]")
 	public WebElement randomMailBox;
 	
 //	@FindBy (xpath = "//*[@id=\"resultTable\"]/tbody/tr[*]/td[2]/a")
@@ -31,6 +31,15 @@ public class EtsyKey {
 
 	public EtsyKey () {
 		PageFactory.initElements(Driver.getDriver(), this);
+	}
+	
+	// create method to send input
+	public void enterEmail (String arg1) {
+		emailBox.sendKeys(arg1);
+	}
+	
+	public void enterPass (String arg2) {
+		passBox.sendKeys(arg2);
 	}
 
 }

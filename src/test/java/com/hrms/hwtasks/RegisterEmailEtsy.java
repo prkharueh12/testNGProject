@@ -4,6 +4,11 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,7 +18,7 @@ import com.hrms.utils.ConfigsReader;
 
 public class RegisterEmailEtsy {
 	EtsyKey etsyInfo = new EtsyKey();
-	
+	Actions act ;
 	@BeforeMethod (alwaysRun = true)
 	public void beforeMyMethod () throws InterruptedException {
 		
@@ -30,24 +35,30 @@ public class RegisterEmailEtsy {
 		String parentWin = Driver.getDriver().getWindowHandle();
 		Driver.getDriver().get(ConfigsReader.getProperty("url4"));
 		
-		Set<String> handles = Driver.getDriver().getWindowHandles();
-		Iterator<String>  ite = handles.iterator();
-		while (ite.hasNext()) {
-			String allWindow = ite.next();
-			Driver.getDriver().switchTo().window(allWindow);
-			//System.out.println(Driver.getDriver().getTitle());
-			if (Driver.getDriver().getTitle().equals("Temp Mail - Disposable Temporary Email")) {
-			}
-		}
+//		Set<String> handles = Driver.getDriver().getWindowHandles();
+//		Iterator<String>  ite = handles.iterator();
+//		while (ite.hasNext()) {
+//			String allWindow = ite.next();
+//			Driver.getDriver().switchTo().window(allWindow);
+//			//System.out.println(Driver.getDriver().getTitle());
+//			if (Driver.getDriver().getTitle().equals("Temp Mail - Disposable Temporary Email")) {
+//			}
+	
+//		
+		//Driver.getDriver().switchTo().window(parentWin);
 		
-		Thread.sleep(9000);
-		Driver.getDriver().switchTo().window(parentWin);
-		//myEle=(WebDriverWait(Driver.getDriver(), 20).until(EC.visibility_of_element_located((By.XPATH, "//input[@id='active-mail']"))).get_attribute("data-clipboard-text"));
 		
-		String myMail = etsyInfo.randomMailBox.getText();
-				//getAttribute("readonly aria-describedby");
+		act = new Actions(Driver.getDriver());
+		act.moveToElement(etsyInfo.randomMailBox);
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(),20);
+		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mail")));
+		
+		String myMail = ele.getAttribute("readonly aria-describedby");
+		
+		//getAttribute("readonly aria-describedby");
 		System.out.println(myMail);
-		
+		Thread.sleep(9000);
+		Driver.getDriver().navigate().back();
 //		etsyInfo.signInButt.click();
 //		etsyInfo.emailBox.sendKeys("email");
 //		etsyInfo.passBox.sendKeys("passW");
