@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,21 +32,27 @@ public class RegisterEmailEtsy {
 	
 	@Test (description = "Login Email")
 	public  void verifyEmail () throws InterruptedException  {
+		/*Testing using the method in PageFactory class
+		etsyInfo.signInButt.click();
+		etsyInfo.enterEmail(ConfigsReader.getProperty("validUser"));
+		etsyInfo.enterPass(ConfigsReader.getProperty("validPass")); */
 		
+	/*	
 		String parentWin = Driver.getDriver().getWindowHandle();
 		Driver.getDriver().get(ConfigsReader.getProperty("url4"));
 		
-//		Set<String> handles = Driver.getDriver().getWindowHandles();
-//		Iterator<String>  ite = handles.iterator();
-//		while (ite.hasNext()) {
-//			String allWindow = ite.next();
-//			Driver.getDriver().switchTo().window(allWindow);
-//			//System.out.println(Driver.getDriver().getTitle());
-//			if (Driver.getDriver().getTitle().equals("Temp Mail - Disposable Temporary Email")) {
-//			}
+		Set<String> handles = Driver.getDriver().getWindowHandles();
+		Iterator<String>  ite = handles.iterator();
+		while (ite.hasNext()) {
+			String allWindow = ite.next();
+			Driver.getDriver().switchTo().window(allWindow);
+			//System.out.println(Driver.getDriver().getTitle());
+			if (Driver.getDriver().getTitle().equals("Temp Mail - Disposable Temporary Email")) {
+			}
 	
-//		
-		//Driver.getDriver().switchTo().window(parentWin);
+		
+		Driver.getDriver().switchTo().window(parentWin);
+	*/	
 		
 		
 		act = new Actions(Driver.getDriver());
@@ -59,6 +66,9 @@ public class RegisterEmailEtsy {
 		System.out.println(myMail);
 		Thread.sleep(9000);
 		Driver.getDriver().navigate().back();
+		
+		
+		
 //		etsyInfo.signInButt.click();
 //		etsyInfo.emailBox.sendKeys("email");
 //		etsyInfo.passBox.sendKeys("passW");

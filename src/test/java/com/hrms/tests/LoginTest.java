@@ -29,6 +29,7 @@ public class LoginTest {
 	
 	@Test (description = "Login Successfully")
 	public  void loginFun ()  { 
+		
 		loginPageObj.username.sendKeys(ConfigsReader.getProperty("validUser"));
 		loginPageObj.password.sendKeys(ConfigsReader.getProperty("validPass"));
 		loginPageObj.loginBtn.click();

@@ -33,6 +33,7 @@ public class EtsyKey {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
+
 	// create method to send input
 	public void enterEmail (String arg1) {
 		emailBox.sendKeys(arg1);

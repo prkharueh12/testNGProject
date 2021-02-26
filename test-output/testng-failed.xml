@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.hrms.hwtasks.RegisterEmailEtsy">
+      <class name="com.hrms.hwtasks.verifyItemEtsy">
         <methods>
-          <include name="verifyEmail"/>
-          <include name="beforeMyMethod"/>
+          <include name="verifyItemCart"/>
+          <include name="closeIt"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.hrms.hwtasks.RegisterEmailEtsy -->
+      </class> <!-- com.hrms.hwtasks.verifyItemEtsy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
